@@ -4,12 +4,6 @@
     angular.module('LunchCheck', [])
         .controller('LunchCheckController', ['$scope', function($scope) {
 
-            $scope.message = "";
-
-            $scope.updateItems = function () {
-                console.log($scope.items);
-            };
-
             $scope.calculateQuantity = function () {
                 $scope.message = $scope.getItems();
             };
